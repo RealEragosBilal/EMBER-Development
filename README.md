@@ -2,7 +2,7 @@
 
 # 🔥 EMBER
 
-### A custom Call of Duty: Black Ops III client
+### A multi-game Call of Duty client project
 
 **An independent community project for Multiplayer & Zombies**
 
@@ -21,17 +21,136 @@
 
 ## About EMBER
 
-**EMBER** is an experimental Windows client project built around **Call of Duty: Black Ops III**, with a custom launcher, its own backend infrastructure, and a focus on the game's **Multiplayer** and **Zombies** modes.
+**EMBER** is an experimental Windows client ecosystem for multiple classic Call of Duty titles. Development currently focuses on **Call of Duty: Black Ops III**, with a custom launcher, separate backend infrastructure, and Multiplayer and Zombies integration. The other listed games are planned targets, not currently playable EMBER releases.
 
-Our goal is to create a cohesive EMBER experience with account services, an in-game server browser, and support for community-hosted servers.
+Our goal is to create a cohesive EMBER experience across supported titles, with account services, in-game server browsing, and community-hosted servers where technically feasible. Game modes vary by title.
 
 The project is based on the open-source **[Ezz BOIII / boiii-free](https://github.com/Ezz-lol/boiii-free)** codebase. EMBER is an independent fork, and the original contributors remain credited for their work.
+
+## Game support & progress
+
+**Supported** here means *targeted for future EMBER support*, **not playable today**. No game has a public EMBER release yet. Progress is tracked by verifiable milestones rather than made-up percentages.
+
+| Game | Development status | Client build | Online gameplay tested | Public release |
+| --- | --- | --- | --- | --- |
+| Call of Duty: World at War | Planned | Not started | No | No |
+| Call of Duty: Black Ops | Planned | Not started | No | No |
+| Call of Duty: Black Ops II | Planned | Not started | No | No |
+| Call of Duty: Black Ops III | **In development** | **Initial x64 build compiled** | Not verified | No |
+| Call of Duty: Modern Warfare 2 (2009) | Planned | Not started | No | No |
+| Call of Duty: Modern Warfare 3 (2011) | Planned | Not started | No | No |
+| Call of Duty: Advanced Warfare | Planned | Not started | No | No |
+| Call of Duty: Infinite Warfare | Planned | Not started | No | No |
+
+**Status key:** Planned = no verified EMBER implementation; In development = active EMBER code/build work; Tested = verified in-game operation; Released = downloadable public EMBER build. The release and tested milestones are still pending for all eight titles.
+
+### Per-game checklists
+
+<details>
+<summary><strong>World at War (T4) · Planned</strong></summary>
+
+- [ ] Establish game-specific client project
+- [ ] Compile first EMBER client
+- [ ] Integrate launcher/network services
+- [ ] Test Multiplayer and Zombies connections
+- [ ] Test dedicated hosting
+- [ ] Publish a public build
+
+</details>
+
+<details>
+<summary><strong>Black Ops 1 (T5) · Planned</strong></summary>
+
+- [ ] Establish game-specific client project
+- [ ] Compile first EMBER client
+- [ ] Integrate launcher/network services
+- [ ] Test Multiplayer and Zombies connections
+- [ ] Test dedicated hosting
+- [ ] Publish a public build
+
+</details>
+
+<details>
+<summary><strong>Black Ops 2 (T6) · Planned</strong></summary>
+
+- [ ] Establish game-specific client project
+- [ ] Compile first EMBER client
+- [ ] Integrate launcher/network services
+- [ ] Test Multiplayer and Zombies connections
+- [ ] Test dedicated hosting
+- [ ] Publish a public build
+
+</details>
+
+<details>
+<summary><strong>Black Ops 3 (T7) · In development</strong></summary>
+
+- [x] Create customized client project
+- [x] Compile initial Windows x64 EMBER executable
+- [x] Implement initial EMBER launcher styling
+- [x] Add initial backend API integration code
+- [ ] Verify full in-game authentication flow
+- [ ] Test Multiplayer join and dedicated hosting
+- [ ] Test Zombies join and dedicated hosting
+- [ ] Validate the EMBER in-game server browser
+- [ ] Finish and test the EMBER update pipeline
+- [ ] Publish a public build
+
+</details>
+
+<details>
+<summary><strong>Modern Warfare 2 (2009) · Planned</strong></summary>
+
+- [ ] Establish game-specific client project
+- [ ] Compile first EMBER client
+- [ ] Integrate launcher/network services
+- [ ] Test Multiplayer connections
+- [ ] Test dedicated hosting
+- [ ] Publish a public build
+
+</details>
+
+<details>
+<summary><strong>Modern Warfare 3 (2011) · Planned</strong></summary>
+
+- [ ] Establish game-specific client project
+- [ ] Compile first EMBER client
+- [ ] Integrate launcher/network services
+- [ ] Test Multiplayer connections
+- [ ] Test dedicated hosting
+- [ ] Publish a public build
+
+</details>
+
+<details>
+<summary><strong>Advanced Warfare · Planned</strong></summary>
+
+- [ ] Establish game-specific client project
+- [ ] Compile first EMBER client
+- [ ] Integrate launcher/network services
+- [ ] Test Multiplayer connections
+- [ ] Test dedicated hosting
+- [ ] Publish a public build
+
+</details>
+
+<details>
+<summary><strong>Infinite Warfare · Planned</strong></summary>
+
+- [ ] Establish game-specific client project
+- [ ] Compile first EMBER client
+- [ ] Integrate launcher/network services
+- [ ] Test Multiplayer and Zombies connections
+- [ ] Test dedicated hosting
+- [ ] Publish a public build
+
+</details>
 
 ### Planned features
 
 - Custom EMBER launcher and visual design
 - EMBER Network accounts and HTTPS-backed services
-- Multiplayer and Zombies
+- Multiplayer and Zombies where available in the respective game
 - In-game browser for community servers
 - Dedicated server support
 - An EMBER-specific update and release system
@@ -39,6 +158,8 @@ The project is based on the open-source **[Ezz BOIII / boiii-free](https://githu
 **Matchmaking is not part of the initial release plan.**
 
 ## Development roadmap
+
+The following development roadmap describes **Black Ops III and shared EMBER infrastructure**, not verified progress in the other seven games.
 
 These checkboxes show **development progress**, not guarantees that a feature works in every environment. Work that exists in code but has not been validated end to end may remain unchecked.
 
@@ -83,6 +204,7 @@ Development changes will be recorded here as milestones are completed. A checked
 | Date | Update |
 | --- | --- |
 | 2026-10-23 | Launched the public EMBER development tracker. |
+| 2026-10-23 | Added eight planned game targets with separate milestone checklists; only Black Ops III has verified initial EMBER client development. |
 | 2026-10-23 | Initial EMBER client modifications and launcher styling committed to the private development repository. |
 | 2026-10-23 | Work ongoing on client stability, update infrastructure, and dedicated server bring-up. |
 
