@@ -46,7 +46,6 @@ These checkboxes show **development progress**, not guarantees that a feature wo
 - [x] Rename the compiled executable to `ember_client.exe`
 - [x] Build a customized EMBER launcher interface
 - [x] Add EMBER-themed styling and an application icon
-- [ ] Replace remaining BOIII names, messages, and local data paths
 - [ ] Verify the launcher on a clean installation
 
 ### 🌐 EMBER Network
@@ -85,7 +84,7 @@ Development changes will be recorded here as milestones are completed. A checked
 | --- | --- |
 | 2026-10-23 | Launched the public EMBER development tracker. |
 | 2026-10-23 | Initial EMBER client modifications and launcher styling committed to the private development repository. |
-| 2026-10-23 | Work ongoing on internal BOIII path migration, updater replacement, and dedicated server bring-up. |
+| 2026-10-23 | Work ongoing on client stability, update infrastructure, and dedicated server bring-up. |
 
 > [!NOTE]
 > This checklist is maintained manually, so it may not reflect every local experiment or uncommitted change.
