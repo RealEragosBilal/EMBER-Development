@@ -36,7 +36,7 @@ The project is based on the open-source **[Ezz BOIII / boiii-free](https://githu
 | Call of Duty: World at War | Planned | Not started | No | No |
 | Call of Duty: Black Ops | Planned | Not started | No | No |
 | Call of Duty: Black Ops II | Planned | Not started | No | No |
-| Call of Duty: Black Ops III | **In development** | **Initial x64 build compiled** | Not verified | No |
+| Call of Duty: Black Ops III | **In development** | **Local x64 launcher/client build tested** | Full MP/Zombies end-to-end not verified | No |
 | Call of Duty: Modern Warfare 2 (2009) | Planned | Not started | No | No |
 | Call of Duty: Modern Warfare 3 (2011) | Planned | Not started | No | No |
 | Call of Duty: Advanced Warfare | Planned | Not started | No | No |
@@ -89,11 +89,16 @@ The project is based on the open-source **[Ezz BOIII / boiii-free](https://githu
 - [x] Compile initial Windows x64 EMBER executable
 - [x] Implement initial EMBER launcher styling
 - [x] Add initial backend API integration code
-- [ ] Verify full in-game authentication flow
-- [ ] Test Multiplayer join and dedicated hosting
-- [ ] Test Zombies join and dedicated hosting
-- [ ] Validate the EMBER in-game server browser
-- [ ] Finish and test the EMBER update pipeline
+- [x] Verify account login in the EMBER launcher against the production backend
+- [x] Implement and test Friends search, outgoing requests, and request listing in the launcher
+- [x] Integrate and authenticate the Friends and Black Market APIs in the production backend
+- [x] Implement and locally test Common/Rare Drops and the Six Pack economy flow
+- [ ] Test Friends request acceptance and presence between two real clients
+- [ ] Verify friend-to-friend Zombies game joining end to end
+- [ ] Test Multiplayer join and dedicated hosting end to end
+- [ ] Test Zombies join and dedicated hosting end to end
+- [ ] Validate the EMBER in-game server browser end to end
+- [ ] Finish, build, and test the EMBER update pipeline
 - [ ] Publish a public build
 
 </details>
@@ -161,18 +166,21 @@ The project is based on the open-source **[Ezz BOIII / boiii-free](https://githu
 
 The following development roadmap describes **Black Ops III and shared EMBER infrastructure**, not verified progress in the other seven games.
 
-These checkboxes show **development progress**, not guarantees that a feature works in every environment. Work that exists in code but has not been validated end to end may remain unchecked.
+These checkboxes show **development progress**, not guarantees that a feature works in every environment. Work that exists in code but has not been validated end to end may remain unchecked. Verified local and production API results do not imply public client availability.
 
 ### 🎨 Client & user interface
 - [x] Rename the compiled executable to `ember_client.exe`
 - [x] Build a customized EMBER launcher interface
 - [x] Add EMBER-themed styling and an application icon
+- [x] Test the launcher with a production account and live Friends requests
 - [ ] Verify the launcher on a clean installation
 
 ### 🌐 EMBER Network
 - [x] Set up an HTTPS backend and PostgreSQL database
 - [x] Implement basic account registration, login, and session endpoints
 - [x] Add initial EMBER Network client-side API code
+- [x] Verify production account login and authenticated Friends/Economy responses
+- [x] Add friend search, request/response, list, remove, presence, and join API endpoints
 - [ ] Validate authentication throughout the full game lifecycle
 - [ ] Complete secure server registration, heartbeats, and session tickets
 - [ ] Verify online services under real multiplayer use
@@ -185,13 +193,25 @@ These checkboxes show **development progress**, not guarantees that a feature wo
 - [ ] Complete multiplayer compatibility testing
 
 ### 🧟 Zombies
-- [ ] Start and validate an EMBER dedicated Zombies server
-- [ ] Join and play a Zombies session using EMBER
+- [x] Bring up a BO3 Zombies dedicated server in the development environment
+- [ ] Join and play a Zombies session using EMBER (full end-to-end validation pending)
 - [ ] Validate Zombies server browser listings
 - [ ] Test official maps and supported custom content
 
+### 🛒 Black Market & social
+- [x] Integrate the Black Market backend with persistent wallets and cosmetics inventory
+- [x] Test authenticated Economy responses against production account data
+- [x] Implement Common and Rare Supply Drop purchase APIs
+- [x] Implement the Six Pack: six Common Drops for 45 Cryptokeys, limited to once per 24 hours per account
+- [x] Save and restore unopened Drops; verify Six Pack purchase/opening in the normal client
+- [x] Implement Friends search, requests, lists, and presence APIs
+- [x] Display outgoing Friends requests in the actual launcher
+- [x] Validate the Friends join API using a simulated Zombies server
+- [ ] Verify real-user acceptance, online status, and game joining between two clients
+- [ ] Complete additional production regression and multiplayer testing
+
 ### 🚀 Updates & release
-- [ ] Implement GitHub-based EMBER update checks
+- [ ] Finish GitHub-based EMBER update checks (implementation draft exists; not built or tested)
 - [ ] Authenticate update packages and verify file integrity
 - [ ] Test safe installation, recovery, and rollback
 - [ ] Publish installation instructions
@@ -207,6 +227,10 @@ Development changes will be recorded here as milestones are completed. A checked
 | 2026-10-23 | Added eight planned game targets with separate milestone checklists; only Black Ops III has verified initial EMBER client development. |
 | 2026-10-23 | Initial EMBER client modifications and launcher styling committed to the private development repository. |
 | 2026-10-23 | Work ongoing on client stability, update infrastructure, and dedicated server bring-up. |
+| 2026-10-28 | Deployed the integrated Black Market, Network, and Friends APIs to the production backend; verified authenticated account, Friends, Economy, and public server-list responses. |
+| 2026-10-28 | Tested the real EMBER launcher login and outgoing friend requests; actual acceptance and joining between two players remain pending. |
+| 2026-10-28 | Integrated and tested the Six Pack: six Common Drops for 45 Cryptokeys, once per 24 hours per account, with persisted unopened Drops. |
+| 2026-10-28 | Began a GitHub Releases-based auto-updater with manifest, file integrity, staging, and rollback design. This is an **unbuilt and untested implementation draft**, not a released feature. |
 
 > [!NOTE]
 > This checklist is maintained manually, so it may not reflect every local experiment or uncommitted change.
