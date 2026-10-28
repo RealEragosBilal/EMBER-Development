@@ -243,7 +243,7 @@ Development changes will be recorded here as milestones are completed. A checked
 - **EMBER installer:** Not released
 - **Release date:** To be announced
 
-**The EMBER source repository is private, and there are no plans to publish the project's source code as a public GitHub repository.** This repository is a public development tracker, not a source-code mirror.
+**EMBER's source code will remain private during active development for security reasons. The plan is to publish the source code after the project has been officially shut down.** This repository serves as the public development tracker, not a source-code mirror.
 
 ## Community & contributions
 
@@ -253,7 +253,7 @@ Please do not submit credentials, access tokens, copyrighted game assets, or pri
 
 ## Credits, license & disclaimer
 
-EMBER is an independent project derived from [Ezz BOIII / boiii-free](https://github.com/Ezz-lol/boiii-free). Credit belongs to the upstream BOIII contributors and their community. EMBER's source repository is intended to remain private. Any distribution of EMBER binaries must nevertheless comply with applicable upstream licenses, including **GNU GPL v3.0** obligations where applicable; these will be reviewed before a public client release.
+EMBER is an independent project derived from [Ezz BOIII / boiii-free](https://github.com/Ezz-lol/boiii-free). Credit belongs to the upstream BOIII contributors and their community. EMBER's source repository is intended to remain private while the project is active, with source publication planned after shutdown. Any distribution of EMBER binaries must nevertheless comply with applicable upstream licenses, including **GNU GPL v3.0** obligations where applicable; these will be reviewed before a public client release.
 
 EMBER is **not affiliated with or endorsed by Activision, Treyarch, Valve, or the BOIII maintainers**. Call of Duty and Black Ops III are trademarks of their respective owners. Users must obtain their game files through legitimate sources; this project does not distribute those files.
 
