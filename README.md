@@ -194,8 +194,8 @@ These checkboxes show **development progress**, not guarantees that a feature wo
 
 ### 🧟 Zombies
 - [x] Bring up a BO3 Zombies dedicated server in the development environment
-- [ ] Join and play a Zombies session using EMBER (full end-to-end validation pending)
-- [ ] Validate Zombies server browser listings
+- [x] Join and play a Zombies session using EMBER
+- [x] Validate Zombies server browser listings
 - [ ] Test official maps and supported custom content
 
 ### 🛒 Black Market & social
