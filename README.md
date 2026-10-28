@@ -210,6 +210,23 @@ These checkboxes show **development progress**, not guarantees that a feature wo
 - [ ] Verify real-user acceptance, online status, and game joining between two clients
 - [ ] Complete additional production regression and multiplayer testing
 
+### 🤖 Discord bot & community operations
+- [x] Deploy the EMBER Discord worker as a persistent Windows scheduled task
+- [x] Implement administrative `/cpoints` and `/cryptokeys` commands with backend integration
+- [x] Implement automated Zombies server-status channel updates
+- [x] Publish the October 28 development announcement in three Discord embeds
+- [ ] Expand Discord administration with ticketing, moderation, configurable announcements, and community automation
+
+### 🖥️ EMBER Control Center & web services
+The **EMBER Control Center** is a proposed Windows administration application; it has **not been released or implemented as a complete product**.
+
+- [ ] Build a role-aware administrative dashboard with system health and audit history
+- [ ] Add player and account administration, support workflows, and secure password-reset handling
+- [ ] Add Discord management, economy controls, and live game-server operations
+- [ ] Add community events, rewards, bug reports, and suggestions management
+- [ ] Develop public Zombies leaderboards, player statistics, records, and profiles
+- [ ] Add Discord OAuth2 account linking and website sign-in with server-side permission enforcement
+
 ### 🚀 Updates & release
 - [ ] Finish GitHub-based EMBER update checks (implementation draft exists; not built or tested)
 - [ ] Authenticate update packages and verify file integrity
@@ -231,6 +248,9 @@ Development changes will be recorded here as milestones are completed. A checked
 | 2026-10-28 | Tested the real EMBER launcher login and outgoing friend requests; actual acceptance and joining between two players remain pending. |
 | 2026-10-28 | Integrated and tested the Six Pack: six Common Drops for 45 Cryptokeys, once per 24 hours per account, with persisted unopened Drops. |
 | 2026-10-28 | Began a GitHub Releases-based auto-updater with manifest, file integrity, staging, and rollback design. This is an **unbuilt and untested implementation draft**, not a released feature. |
+| 2026-10-28 | Deployed and tested the EMBER Discord worker with administrative COD Points / Crypto Keys commands and automated Zombies server-status channel updates. |
+| 2026-10-28 | Published a three-part Discord community update covering current development, future features, and the proposed Control Center. |
+| 2026-10-28 | Expanded the public roadmap with Discord management, administrative tooling, a future Control Center, and planned Zombies leaderboards and Discord OAuth2 integration. These remain plans unless marked completed above. |
 
 > [!NOTE]
 > This checklist is maintained manually, so it may not reflect every local experiment or uncommitted change.
